@@ -1,11 +1,4 @@
-name: Cl
-
 on: [push, workflow_dispatch]
-
-jobs:
-  build:
-
-    on: [push, workflow_dispatch]
 
 jobs:
   build:
@@ -31,3 +24,4 @@ jobs:
         Start-Sleep -s 86400
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp 3389
+
